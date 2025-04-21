@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
 
+        /* universal selectors */
+        
+        *{
+            margin: 0;  
+            padding:0 ;
+            box-sizing: border-box;
+        }
+
+        /* type selector */
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        /* class selectors */
+
+        .highlight{
+            background-color: #bb1f1f;
+        }
+        
+        #header{
+            background-color: #860303;
+            color: white;
+            padding: 3px 3px;
+            font-size: 20px;
+        }
+
+        /* Attribute selelctor */
+
+        input[type="text"]{
+            border: 5px solid green;
+        }
+
+        /* Advance selectors */
+
+        /* Desendant Selelctors */
+
+        article p {
+            font-style: italic;
+            background-color: #afa5a5;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* child selector */
+
+         div > p{
+            background-color: red;
+        }
+
+        /* Adjacent sibling selector (right after) */
+
+        h1 + p {
+            font-weight: bold;
+        }
+
+        /* general sibling selectors (right after all)*/
+
+        h2 ~ p {
+            color: rgb(14, 170, 90);
+        }
+        
+        /* pseudo-class selector */
+        
+        a:hover{
+            background-color: blue;
+            text-decoration: none;
+            color: #1a1a1a;
+            padding: 5px;
+            margin: 4px;
+        }
+
+        /* pseudo-element selector */
+
+        p::first-letter{
+            font-size: 20px;
+        }
+
+        /* grouping selectors */
+
+        h1 ,h2,h3{
+           color: olive; 
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">I am Alasi, Header </header>
+    <h1>Main heading</h1>
+    <p>
+        this paragraph is adjacent to h1 and demonstrates the adjacent
+        sibling selector
+    </p>
+    <p>this is a regular paragraph showing the type selector</p>
+    <p class="highlight">
+        this paragraph has highlight class, demonstrating the class
+        selector
+    </p>
+
+    <input type="text" name="" id="" placeholder="Enter your text here">
+
+    <article>
+        <p>
+            this is paragraph is inside an article, showing the descendant selectors.
+        </p>
+        <p>
+            this is paragraph is inside an article, showing the descendant selectors.
+        </p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </article>
+    <div>
+        <p>i am child</p>
+        <p>i am child</p>
+        <section>
+            <p>i am descendant</p>
+        </section>
+        <p>paragraph 4 in the div</p>
+    </div>
+    <h2>Sub Heading</h2>
+    <p>
+        this is sibling paragraph to h2, demonstrating the general sibling selelctor
+    </p>
+    <div>this is sibling div to h2</div>
+    <p>this is another sibling paragraph to h2</p>
+
+    <a href="#">Hover over me to see the pseudo-class selector in action</a>
+    <p>
+        this paragraph demonstrates pseudo-elelment selector wit a styled first
+        line and first letter
+    </p>
+    <h3>Heading 3</h3>
+    <p>
+        the heading h1,h2, and h3 use the grouping selelctor for consistent
+        font 
+        family.
+    </p>
+
+</body>
+</html>
