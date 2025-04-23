@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boxmodel{
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            /* box-sizing: content-box; */
+            /* box-sizing: border-box; */
+            background-color: #1a1a1a;
+            color: antiquewhite;
+            margin-bottom: 25px;
+            /* display: inline; */
+        }
+        #boxmodel2{
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            /* box-sizing: content-box; */
+            /* box-sizing: border-box; */
+            background-color: #1a1a1a;
+            color: antiquewhite;
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <div id="boxmodel">
+        here i am the box model testing box, checking the size of both models
+    </div>
+    <div id="boxmodel2">
+        here i am the box model testing box, checking the size of both models
+    </div>
+</body>
+</html>
 
+// Think of a framed photo:
+// Content-box: The dimensions of the photo exclude the frame, 
+so adding a thick frame makes the entire photo bigger.
+
+// Border-box: The frame is included in the photo's dimensions, 
+ensuring the whole framed piece stays the same size.
