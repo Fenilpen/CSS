@@ -46,12 +46,14 @@
             width: 100%;
             bottom: 0;
             left: 0;
-            background-color: #400ca8;
-            transform: scaleY(0);
+            background-color: #5507f0;
+            transform: scalex(0);
+            transition: transform 0.3s
+            ease-in-out;
         }
 
-        .nav a:hover::after{
-
+        .nav1 a:hover::after{
+            transform: scalex(1);
         }
 
         .nav1 .login-btn{
