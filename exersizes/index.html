@@ -178,6 +178,32 @@ Allow the items to wrap to the next line when the screen width is reduced.
 Style each flex-item with a fixed width and height, and give each one a red background color for distinction. Give a yellow color to the parent div for distinction.
 
 answer
+<html>
+    <style type="text/css" media="all">
+        .flex-container{
+            height: 200px;
+            width:  100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: yellow;
+        }
+        .flex-item{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 3px;
+        }
+    </style>
+<div class="flex-container">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+</div>
+</html>
+
+//10
     
 </body>
 </html>
